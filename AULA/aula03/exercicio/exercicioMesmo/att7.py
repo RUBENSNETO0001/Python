@@ -1,3 +1,6 @@
+# Crie um programa que solicite um número aleatório, e verifique se esse numero escolhido bate com o numero gerado aleatoriamente (utilize a função Random)
+
+
 import random
 
 numero = random.randint(0,10)

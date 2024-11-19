@@ -1,3 +1,6 @@
+# Escreva um programa que verifica se um número é par ou ímpar.
+
+
 num1 = int(input('Me de um numero: '))
 
 resultado = num1 % 2

@@ -1,3 +1,6 @@
+# Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
+
 num1 = int(input('Me de um numero: '))
 
 if num1 > 0:
