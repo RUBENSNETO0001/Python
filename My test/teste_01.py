@@ -25,5 +25,4 @@ minha_matriz = criar_matriz(numMatrizLargura, numMatrizAltura)
 print('matriz = [')
 for linha in minha_matriz:
 		print(linha)
-
 print(' ]')
