@@ -1,8 +1,10 @@
 print("Esse programa vai pega numeros e coloca em uma matriz de n x m de tamanho indecado pelo usuario e imprimir.\n")
 
+#definindo uma função
 def criar_matriz(linhas, colunas):
     """Cria uma matriz bidimensional e a preenche com valores fornecidos pelo usuário."""
     matriz = []
+    
     for i in range(linhas):
         linha = []
         for j in range(colunas):
