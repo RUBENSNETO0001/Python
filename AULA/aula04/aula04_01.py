@@ -34,3 +34,7 @@ nome = "Rubens"
 print('Meu nome é' + nome)#forma de concatenar
 
 print('A aula de python é extremamente '+ 3* " muito " + 2*" legal")
+
+pi = 3.141573485
+print(f'O valor de pi arrendondado é {pi:3f}')#com frestring
+print(f'O valor de pi arrendondado é', round(pi,3)#sem frestring
