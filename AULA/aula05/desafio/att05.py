@@ -1,24 +1,24 @@
 carrinhodeCompras = []
+terminar = ""
 
-while carrinhodeCompras != 0:
-    compras = input('Digite o nome do produto:')
+while terminar != 'n':
+    compras = input('\nDigite o nome do produto:')
     carrinhodeCompras.append(compras)
+    terminar = input('\nDeseja adicionar mais algum no carrinho(s ou n): ')
     
-remover = ''
-while remover != 'n'
-remover = input('Que remover algum:')
-if remover :
-    
-    
-numeros = []
-for i in range(5):
-    num = int(input('Digite numeros: '))
-    numeros.append(num)
-print(numeros)
-num02 = int(input('Me de um numero para remover:'))
-
-if  num02 in numeros  :
-    numeros.remove(num02) 
-    print(numeros)
+escolha = input('\n\n\nDeseja remover algum item da lista (s ou n): ')
+if escolha == 's':
+    terminardeRemover = ''
+    remover = ''
+    while terminardeRemover != 'n':
+        remover = input('\n\nMe de o nome do produto: ')
+        terminardeRemover = input('\n\nDeseja remover mais algum item da lista (s ou n):')
+        carrinhodeCompras.remove(remover)
+    # imprimir a lista
+    print('Lista do carrinho:')
+    for i in range(len(carrinhodeCompras)):
+        print(f'°{carrinhodeCompras[i]}')
 else:
-    print('Esse numero não ta aqui')
+    print('Lista do carrinho:')
+    for i in range(len(carrinhodeCompras)):
+        print(f'°{carrinhodeCompras[i]}')
