@@ -1,3 +1,4 @@
+
 i_1 = 0 # e so um contador mesmo
 
 contato = []
@@ -29,11 +30,12 @@ while menu != 0:
         i_1 += 1
         print('\n\nContatos:')
         print('Quantidade de numeros(', i_1,'):')
+        print('\n')
         for i in range(len(contato)):
             print(contato[i])
-            if i == 1:
-                print('-------------------')
-    
+            # não sei oque fazer aqui, indecizam da porra
+                
+            
     # rever essa escolha, concertar
     elif menu == 2:
         print('\n\n\nOpção (Buscar contato):')
@@ -63,7 +65,7 @@ while menu != 0:
         print('Quantidade de numeros(', i_1,'):')
         for i in range(len(contato)):
             print(contato[i])
-            if i == 1:
+            if i > len(contato):
                 print('-------------------')
     else:
         print('Porfavor coloque uma das opções!!')
