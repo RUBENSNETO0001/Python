@@ -1,6 +1,5 @@
-
 i_1 = 0 # e so um contador mesmo
-
+# ARMAZENAR O CONTATO
 contato = []
 chave = {
     'chave': 'nome'
@@ -8,9 +7,11 @@ chave = {
 numero = {
     'valor': 'numero'
 }
+# ARMAZENAR O CONTATO
 
+# MENU
 menu = ''
-
+# TAVA PENSANDO
 while menu != 0:
     print('\tOpcão da agenda Telefônica')
     print('\n(1) Adicionar contato')
@@ -33,26 +34,22 @@ while menu != 0:
         print('\n')
         for i in range(len(contato)):
             print(contato[i])
-            # não sei oque fazer aqui, indecizam da porra
                 
-            
     # rever essa escolha, concertar
     elif menu == 2:
         print('\n\n\nOpção (Buscar contato):')
         buscar = input('Digite o nome do contato: ')
         
-        if contato == buscar:
-            local == len(contato)
+        for i in range(len(chave)):
+            if chave == buscar:
+                local = len(chave)
             
-            print('\n\nContato:')
-            print(chave[local])
-            print(numero[local])
-                
-            if i == 1:
-                print('-------------------')
-                        
-            else:
-                print('Esse contato não existe na lista')
+                print('\n\nContato:')
+                print(chave[local])
+                print(numero[local])
+                             
+        else:
+            print('Esse contato não existe na lista')
     #concertar aqui tbm
     elif menu == 3:
         print('\n\n\nOpção (Remover contato):')
