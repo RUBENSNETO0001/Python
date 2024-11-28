@@ -52,7 +52,7 @@ while menu != 0:
             else:
                 print('Esse contato não existe na lista')
     #concertar aqui tbm
-    else:
+    elif menu == 3:
         print('\n\n\nOpção (Remover contato):')
         remover = input('Digite o nome do contato: ')
         
@@ -65,3 +65,5 @@ while menu != 0:
             print(contato[i])
             if i == 1:
                 print('-------------------')
+    else:
+        print('Porfavor coloque uma das opções!!')
