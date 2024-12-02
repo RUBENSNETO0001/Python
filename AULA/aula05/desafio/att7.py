@@ -10,7 +10,7 @@ while menu != 0:
     print('\n(1) Adicionar contato')
     print('(2) Buscar contato')
     print('(3) Exibir todos os contatos')
-    
+    print('(0) Sair dos contatos')
     menu = int(input('Digite o número da opção: '))
     
     # Adicionar contato
@@ -43,23 +43,25 @@ while menu != 0:
                 print(f"Número: {c['numero']}")
                 encontrado = True
                 break
-        
+        # senão encontrar
         if not encontrado:
             print('Esse contato não existe na lista.')
             
     #concertar aqui tbm
     elif menu == 3:
         print('\n\n\nOpção (Remover contato):')
-        remover = input('Digite o nome do contato: ')
+        remover = input('Numero do ')
         
-        contato.Remover(remover)
+        for c in contato:
+                del c[1]
+                
+            print('Contato removido!!')
+            print('\n\nContatos:')
+            print(f"Nome: {c['nome']}")
+            print(f"Número: {c['numero']}")
+            
+else:
+    print('Porfavor coloque uma das opções!!')
         
-        i_1 += 1
-        print('\n\nContatos:')
-        print('Quantidade de numeros(', i_1,'):')
-        for i in range(len(contato)):
-            print(contato[i])
-            if i > len(contato):
-                print('-------------------')
-    else:
-        print('Porfavor coloque uma das opções!!')
+# fim do programa
+print("Programa finalizado!!")
