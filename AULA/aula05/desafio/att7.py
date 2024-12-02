@@ -27,7 +27,7 @@ while menu != 0:
         print(f'Quantidade de contatos: {i_1}')
         print('\nLista de contatos:')
         for c in contato:
-            print(f"Nome: {c['nome']}, Número: {c['numero']}")
+            print(f"Nome: {c['nome']}\nNúmero: {c['numero']}")
     
     # Buscar um contato
     elif menu == 2:
@@ -46,6 +46,7 @@ while menu != 0:
         
         if not encontrado:
             print('Esse contato não existe na lista.')
+            
     #concertar aqui tbm
     elif menu == 3:
         print('\n\n\nOpção (Remover contato):')
