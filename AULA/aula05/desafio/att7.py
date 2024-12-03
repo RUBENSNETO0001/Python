@@ -22,9 +22,7 @@ while menu != 0:
         # Adicionando o contato como um dicionário na lista 'contato'
         contato.append({'nome': nome, 'numero': numero})
         
-        i_1 += 1  # Incrementa a quantidade de contatos
         print('\n\nContatos:')
-        print(f'Quantidade de contatos: {i_1}')
         print('\nLista de contatos:')
         for c in contato:
             print(f"Nome: {c['nome']}\nNúmero: {c['numero']}")
@@ -50,15 +48,14 @@ while menu != 0:
     #concertar aqui tbm
     elif menu == 3:
         print('\n\n\nOpção (Remover contato):')
-        remover = input('Numero do ')
-        
-        for c in contato:
-                del c[1]
-                
-            print('Contato removido!!')
-            print('\n\nContatos:')
-            print(f"Nome: {c['nome']}")
-            print(f"Número: {c['numero']}")
+        try:
+            remover = int(input('Me informe o indice do contato para ser removido: '))
+            
+            if 0 <= remover < len(contato):
+                del contato[remover]
+                print('Contato removido!!')
+        except ValueError:
+            print('Por favor, insira um número válido para o índice.')
             
 else:
     print('Porfavor coloque uma das opções!!')
