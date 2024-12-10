@@ -10,7 +10,7 @@ def criar_matriz(linhas, colunas):
         for j in range(colunas):
             while True:
                 try:
-                    valor = int(input("Me informe o número para a posição [{i},{j}]: "))
+                    valor = int(input(f"Me informe o número para a posição [{i},{j}]: "))
                     linha.append(valor)
                     break
                 except ValueError:
