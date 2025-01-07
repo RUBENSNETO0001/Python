@@ -6,6 +6,7 @@ nota4 = float(input(f"Digite a nota(4): "))
 notaFinal = (nota+ nota2+ nota3+ nota4) / 4
 
 print(f'{notaFinal}')
+
 if notaFinal < 7:
     print(f'Aluno reprovado, nota: {notaFinal} ')
 else:
