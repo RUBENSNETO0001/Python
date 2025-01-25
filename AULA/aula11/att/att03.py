@@ -9,7 +9,7 @@ class Veiculo:
         print(f"O ano do veiculo é {self.ano}")
     
 veiculo1 = Veiculo('Nissan', 'GTR Skyline R34', 1998)
-
+print("\n\n")
 veiculo1.exibir_detalhes()
 
 class Carro(Veiculo):
@@ -17,9 +17,11 @@ class Carro(Veiculo):
         super().__init__(marca, modelo, ano)
         self.tipo_combustivel = tipo_combustivel
     def exibir_detalhes(self):
+        super().exibir_detalhes()
         print(f"O tipo do combostivel é {self.tipo_combustivel}")
         
 veiculo2 = Carro('Nissan', 'GTR Skyline R34', 1998, "Gasolina")
+print("\n\n")
 veiculo2.exibir_detalhes()
 
 class Moto(Veiculo):
@@ -27,7 +29,9 @@ class Moto(Veiculo):
         super().__init__(marca, modelo, ano)
         self.cilindradas = cilindradas
     def exibir_detalhes(self):
-        print(f"O quantidade de cilindradas é{self.cilindradas}")
+        super().exibir_detalhes()
+        print(f"O quantidade de cilindradas é {self.cilindradas}")
 
-veiculo3 = Carro('honda', 'CG', 2015, "Gasolina", '15')
+veiculo3 = Moto('honda', 'CG', 2015, '15')
+print("\n\n")
 veiculo3.exibir_detalhes()
