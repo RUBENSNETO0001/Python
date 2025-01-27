@@ -6,4 +6,4 @@ class Usuario:
         
 class Bibliotecario:
     def __init__(self):
-        
+        asdas
