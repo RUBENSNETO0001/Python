@@ -40,5 +40,5 @@ class Vendedor(Funcionario):
         print(f"salario do  vendedor: {self.salarioBase:.2f}")
         print(f"Salario do  vendedor mais comissao: {self.comissao}")
 comissao = ((0.05 * 1400)+1400)
-vedendor = Gerente('juju', 122221312, 1400, comissao)
+vedendor = Vendedor('juju', 122221312, 1400, comissao)
 vedendor.mostrar_dados()
